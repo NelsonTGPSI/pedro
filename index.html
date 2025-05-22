@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Great Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background-color: #ffffff;
+    }
+    header {
+      background: linear-gradient(to right, #007399, #003366);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #003366;
+    }
+    .services, .testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .cta {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .cta a {
+      background: white;
+      color: #003366;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LogoPrincipal@2x.jpg" alt="For Great Events logo">
+    <h1>For Great Events</h1>
+    <p>Criamos Momentos. Guardamos Emoções.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#testemunhos">Testemunhos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A For Great Events é uma empresa especializada na produção de eventos, oferecendo soluções 360º que combinam criatividade, tecnologia e execução excecional. Nasceu do sonho de transformar emoções em experiências memoráveis. A nossa equipa vive cada projeto com paixão e dedicação verdadeira.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div><strong>Casamentos</strong><br>Experiências únicas e emocionantes.</div>
+      <div><strong>Eventos Corporativos</strong><br>Reforço de marca e celebrações empresariais.</div>
+      <div><strong>Design Floral</strong><br>Decoração emocional e impactante.</div>
+      <div><strong>Gestão Total</strong><br>Coordenamos tudo com excelência.</div>
+    </div>
+  </section>
+
+  <section id="testemunhos">
+    <h2>Testemunhos</h2>
+    <div class="testimonials">
+      <div>“Foi mais do que um evento. Foi um sonho tornado real.” <br><strong>– Maria e Ricardo</strong></div>
+      <div>“Nunca imaginei que um evento pudesse emocionar assim.” <br><strong>– João M.</strong></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Queres criar algo memorável?</h2>
+    <p>Contacta-nos e transforma a tua ideia num momento eterno.</p>
+    <a href="#contacto">Pedir Orçamento</a>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/moqzrwdy" method="POST">
+      <input type="text" name="name" placeholder="O teu nome" required>
+      <input type="email" name="email" placeholder="O teu email" required>
+      <select name="tipo-evento" required>
+        <option value="">Tipo de Evento</option>
+        <option value="casamento">Casamento</option>
+        <option value="corporativo">Evento Corporativo</option>
+        <option value="outro">Outro</option>
+      </select>
+      <textarea name="mensagem" placeholder="Fala-nos sobre o teu evento" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 For Great Events. Todos os direitos reservados. | <em>Não fazemos eventos. Criamos aquilo que fica no coração.</em><br>
+    Redes sociais: <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+  </footer>
+</body>
+</html>
